@@ -1,8 +1,10 @@
-while True:
- contador = 10
- break
+contador = 11
+ 
 
- print (contador)
- contador = contador-1
- if contador == 1:
-   break
+while contador >= 1:
+       contador -= 1
+       print (contador);
+      
+       if contador == 1:
+           print ("FOGO");
+           break
