@@ -1,4 +1,6 @@
 boletim = {}
+lista_boletim = []
+
 desejaadicionaraluno = input("Deseja adicionar alunos? S/N?")
 
 while desejaadicionaraluno == "N" or "n":
@@ -20,8 +22,13 @@ while desejaadicionaraluno == "S" or "s":
       else:
         print("Reprovado")  
     
+      lista_boletim.append(boletim.copy())
         
     sair = input("Deseja sair? S/N: ")
     if sair == "S" or "s":
       break 
+
+
+for registro in lista_boletim:
+    print(f"Aluno: {registro['Nome']} | Nota: {registro['Nota']}")
         
